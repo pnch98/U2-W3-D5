@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shopping, Crudding, Amazing." />
+    <link rel="stylesheet" href="./assets/dist/css/style.min.css" />
+    <title>Crudazon</title>
+  </head>
+  <body>
+    <header class="bg-dark mb-6">
+      <div class="position-fixed top-0 start-0 end-0 z-1000">
+        <nav class="navbar navbar-expand-md bg-black">
+          <div class="container bg-black">
+            <a class="navbar-brand" href="./index.html">
+              <img src="assets/img/crud2.jpg" alt="" width="180" height="70" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon text-white-50 fs-1">≡</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav flex-grow-1 justify-content-between">
+                <div class="d-flex align-items-baseline">
+                  <li class="nav-item">
+                    <a class="nav-link active fs-5 text-white-50 me-2" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#">Deals</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#">More</a>
+                  </li>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link text-white-50" href="./backoffice.html">Backoffice</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="bg-secondary-subtle pt-3 pb-1">
+        <div class="container bg-white p-0">
+          <div id="carouselAutoplaying" class="carousel slide d-none p-0 mb-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block custom-height ms-auto me-auto" alt="Product image" />
+                <div class="carousel-caption d-none d-md-block py-0">
+                  <h5 class="bg-black bg-opacity-50 py-3 m-0"></h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block custom-height ms-auto me-auto" alt="Product image" />
+                <div class="carousel-caption d-none d-md-block py-0">
+                  <h5 class="bg-black bg-opacity-50 py-3 m-0"></h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block custom-height ms-auto me-auto" alt="Product image" />
+                <div class="carousel-caption d-none d-md-block py-0">
+                  <h5 class="bg-black bg-opacity-50 py-3 m-0"></h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block custom-height ms-auto me-auto" alt="Product image" />
+                <div class="carousel-caption d-none d-md-block py-0">
+                  <h5 class="bg-black bg-opacity-50 py-3 m-0"></h5>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev bg-secondary-subtle"
+              type="button"
+              data-bs-target="#carouselAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon bg-dark rounded-circle opacity-50" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next bg-secondary-subtle"
+              type="button"
+              data-bs-target="#carouselAutoplaying"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon bg-dark rounded-circle opacity-50" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 mb-5">
+        <div class="d-flex align-items-center">
+          <h1 class="me-3 mb-3">Products</h1>
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-dark dropdown-toggle p-1"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Most viewed
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Most rated</a></li>
+              <li><a class="dropdown-item" href="#">New</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3"></div>
+
+        <div id="spinner" class="d-flex justify-content-center mt-10">
+          <div class="spinner-border text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

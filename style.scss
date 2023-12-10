@@ -1,0 +1,48 @@
+@import "./bootstrap-override";
+
+.bg-black {
+  background-color: black;
+}
+
+.ls {
+  letter-spacing: 0.5rem !important;
+  font-weight: bold;
+}
+
+header a.nav-link:hover {
+  color: white !important;
+}
+
+.z-1000 {
+  z-index: 1000 !important;
+}
+
+@for $i from 6 through 10 {
+  .mb-#{$i} {
+    margin-bottom: #{$i}rem;
+  }
+}
+
+@for $i from 6 through 10 {
+  .mt-#{$i} {
+    margin-top: #{$i}rem;
+  }
+}
+
+.custom-height {
+  height: 200px;
+  width: auto;
+}
+@media screen and (min-width: 576px) {
+  .custom-height {
+    height: 400px;
+    width: auto;
+  }
+}
+
+.divImg:hover {
+  img {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+}
